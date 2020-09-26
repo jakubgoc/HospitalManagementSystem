@@ -1,7 +1,7 @@
-***Postgres Course Setup***
-///////////
-**Docker Postgres Setup**
-//////////////////////
+#Postgres Course Setup#
+
+##Docker Postgres Setup##
+
 
 Create Docker container with Postgres database:
 
@@ -26,12 +26,11 @@ Password: `password`
 Note: This stores the data inside the container - when you delete the container, the data is deleted as well.
 
 Connect to PSQL prompt from docker:
-docker exec -it hms psql -U postgres
+`docker exec -it hms psql -U postgres`
 
-///
 
-***Application Database Setup***
-/////
+##Application Database Setup##
+
 Create the Database:
 
 psql> create database hms_app;
