@@ -1,4 +1,6 @@
-# Postgres Course Setup
+#Hospital Management System
+
+Hospital Management System is web application created using Java, Spring Boot and SQL. 
 
 ## Docker Postgres Setup
 
