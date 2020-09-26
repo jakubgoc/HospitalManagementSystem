@@ -5,15 +5,15 @@
 
 Create Docker container with Postgres database:
 
-docker create --name hms -e POSTGRES_PASSWORD=password -p 5432:5432 postgres:11.5-alpine
+`docker create --name hms -e POSTGRES_PASSWORD=password -p 5432:5432 postgres:11.5-alpine`
 
 Start container:
 
-docker start hms
+`docker start hms`
 
 Stop container:
 
-docker stop hms
+`docker stop hms`
 
 Connection Info:
 
@@ -33,7 +33,7 @@ Connect to PSQL prompt from docker:
 
 Create the Database:
 
-psql> create database hms_app;
+`psql> create database hms_app;`
 
 Setup the Tables:
 
