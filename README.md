@@ -1,5 +1,5 @@
-Postgres Course Setup
-Docker Postgres Setup
+***Postgres Course Setup**(
+**Docker Postgres Setup**
 
 Create Docker container with Postgres database:
 
