@@ -1,5 +1,7 @@
-***Postgres Course Setup**(
+***Postgres Course Setup***
+///////////
 **Docker Postgres Setup**
+//////////////////////
 
 Create Docker container with Postgres database:
 
@@ -28,8 +30,8 @@ docker exec -it hms psql -U postgres
 
 ///
 
-Application Database Setup
-
+***Application Database Setup***
+/////
 Create the Database:
 
 psql> create database hms_app;
