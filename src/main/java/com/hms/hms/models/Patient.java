@@ -15,18 +15,18 @@ public class Patient {
 
     private String first_name;
     private String last_name;
-    private Long phone_number;
+    private String phone_number;
 
     @ManyToMany(mappedBy = "patients")
     @JsonIgnore
-    private List<Patient> patients;
+    private List<Doctor> doctors;
 
-    public List<Patient> getPatients() {
-        return patients;
+    public List<Doctor> getDoctors() {
+        return doctors;
     }
 
-    public void setSessions(List<Patient> patients) {
-        this.patients = patients;
+    public void setDoctors(List<Doctor> doctors) {
+        this.doctors = doctors;
     }
 
     public Patient() {
@@ -56,11 +56,11 @@ public class Patient {
         this.last_name = last_name;
     }
 
-    public Long getPhone_number() {
+    public String getPhone_number() {
         return phone_number;
     }
 
-    public void setPhone_number(Long phone_number) {
+    public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
     }
 }

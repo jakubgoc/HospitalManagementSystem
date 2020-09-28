@@ -2,11 +2,15 @@ package com.hms.hms.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "doctors")
+/*
+@EntityScan(basePackages = {"com.hms.hms.doctors"})
+*/
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Doctor {
     @Id
@@ -15,7 +19,7 @@ public class Doctor {
     private String first_name;
     private String last_name;
     private String title;
-    private Long phone_number;
+    private String phone_number;
 
     /*@ManyToMany(mappedBy = "patients")
     @JsonIgnore
@@ -75,11 +79,11 @@ public class Doctor {
         this.title = title;
     }
 
-    public Long getPhone_number() {
+    public String getPhone_number() {
         return phone_number;
     }
 
-    public void setPhone_number(Long phone_number) {
+    public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
     }
 }
