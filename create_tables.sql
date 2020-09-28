@@ -24,3 +24,9 @@ CREATE TABLE appointments
   start_time             time without time zone  NOT NULL,
   end_time               time without time zone  NOT NULL
 );
+
+CREATE TABLE doctors_patients
+(
+ doctor_id integer NOT NULL REFERENCES doctors (doctor_id), 
+ patient_id integer NOT NULL REFERENCES patients (patient_id)
+);
