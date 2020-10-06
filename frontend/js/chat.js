@@ -20,3 +20,21 @@ function sendMsg(from, text) {
     message: text
     }));
 }
+
+function registration() {
+    let userName = document.getElementById("userName").value;
+    $.get(url + "/registration/" + userName, function(response) {
+        connectToChat(userName);
+    }).fail(function (error){
+        if(error.status === 400){
+            alert("Login is already busy!")
+        }
+    })
+}
+
+function fetchAll(){
+
+$.get(url + "/fetchAllUsers/" + userName, function(response) {
+        connectToChat(userName);
+    })
+}
