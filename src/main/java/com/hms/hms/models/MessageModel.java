@@ -26,6 +26,34 @@ public class MessageModel {
     private Date timestamp;
     private MessageStatus status;
 
+    public MessageStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(MessageStatus status) {
+        this.status = status;
+    }
+
+    public String getRecipientId() {
+        return recipientId;
+    }
+
+    public String getSenderId() {
+        return senderId;
+    }
+
+    public Object getId() {
+        return id;
+    }
+
+    public Object getSenderName() {
+        return senderName;
+    }
+
+    public void setChatId(String s) {
+        this.chatId=chatId;
+    }
+
     /*private String message;
     private String fromLogin;
 

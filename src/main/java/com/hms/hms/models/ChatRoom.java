@@ -18,4 +18,13 @@ public class ChatRoom {
     private String chatId;
     private String senderId;
     private String recipientId;
+
+
+    public String getChatId() {
+        return chatId;
+    }
+
+    public void setChatId(String chatId) {
+        this.chatId = chatId;
+    }
 }
