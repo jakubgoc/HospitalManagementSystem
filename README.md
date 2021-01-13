@@ -56,3 +56,10 @@ Install the Data:
 
 `docker cp insert_data.sql hms:/insert_data.sql
 docker exec -it hms psql -d hms_app -f insert_data.sql -U postgres`
+
+
+## Postman requests
+
+GET http://localhost:8080/api/v1/doctors
+
+GET http://localhost:8080/api/v1/patients
